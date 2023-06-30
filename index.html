@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <script src="bino.js"></script> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p = prompt("Ingrese numero:");
+        let II = 0, III = 0, IV = 0, V = 0;
+        for(let i = 1; i <= p;i++){
+            if(ContarMultiplosde2(i)){
+                II += 1;
+            }
+            if(ContarMultiplosde3(i)){
+                III += 1;
+            }
+            if(ContarMultiplosde4(i)){
+                IV += 1;
+            }
+            if(ContarMultiplosde5(i)){
+                V += 1;
+            }
+        }
+        document.write(II + " Multiplo(s) de 2 <br> " + III + " Multiplo(s) de 3 <br> " + IV + " Multiplo(s) de 4 <br> " + V + " Multiplo(s) de 5 <br> ");
+    </script>
+</body>
+</html>
